@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lojinha</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap')
+        </style>
+</head>
+<body>
+
+    <div class="bg-container">
+       
+         
+          
+    </div><!-- Div para a imagem de fundo -->
+
+    <img class="logo" src="imagens/x-men.png" alt="x-men">
+
+    <div class="quadroUm">
+       selecione um personagem
+    </div>
+
+    <div class="fotos">
+        <img class="com-margem" src="imagens/card-jean-grey.png" alt="card-jean-grey" onclick="animar(0)">
+        <img class="com-margem" src="imagens/card-ciclope.png" alt="card-ciclope" onclick="animar(1)">
+        <img class="com-margem" src="imagens/card-lince-negra.png" alt="card-lince-negra" onclick="animar(2)">
+        <img class="sem-margem" src="imagens/card-tempestade.png" alt="card-tempestade" onclick="animar(3)">
+        <img class="com-margem" src="imagens/Component 5.png" alt="Component 5" onclick="animar(4)">
+        <img class="com-margem" src="imagens/Component 6.png" alt="Component 6" onclick="animar(5)">
+        <img class="com-margem" src="imagens/card-magneto.png" alt="card-magneto" onclick="animar(6)">
+        <img class="sem-margem" src="imagens/card-vampira.png" alt="card-vampira" onclick="animar(7)">
+    </div>
+
+    <script>
+        const imagensParaMostrar = [
+        "imagens/personagens/jean-grey-com-raio 1.png",
+        "imagens/personagens/ciclope-raio 1.png",       
+        "imagens/personagens/lince-negra raio 1.png",
+        "imagens/personagens/tempestade-raio 1.png",
+        "imagens/personagens/wolverine-raio 1.png",
+        "imagens/personagens/noturno-raio 1.png",
+        "imagens/personagens/magneto-raio 1.png",       
+        "imagens/personagens/vampira-raio 1.png",         
+        ]; // Adicione aqui o caminho de outras imagens que deseja mostrar
+
+       
+
+        function animar(indice) {
+        // Obtém o elemento de imagem clicado
+        const imagemClicada = document.querySelectorAll('.fotos img')[indice];
+
+        // Altera o plano de fundo e a sombra da imagem clicada
+        imagemClicada.style.background = '#D9D9D9';
+        imagemClicada.style.boxShadow = '0px 0px 24px 5px #0271F7';
+
+        // Verifica se o índice está dentro do intervalo do array
+        if (indice >= 0 && indice < imagensParaMostrar.length) {
+            // Cria um novo elemento de imagem
+            const novaImagem = document.createElement("img");
+            // Define o atributo src da nova imagem para exibir a imagem correspondente
+            novaImagem.src = imagensParaMostrar[indice];
+            // Adiciona a nova imagem ao corpo do documento
+            document.body.appendChild(novaImagem);
+        }
+    }
+
+                 </script>
+</body>
+</html>

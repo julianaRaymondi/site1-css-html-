@@ -1,0 +1,100 @@
+body{  
+ 
+    
+    background-color: black;
+  
+}
+.bg-container {
+    position: relative; /* Define a posição relativa para que outros elementos possam ser posicionados em relação a ele */
+    width: 100%; /* Define a largura como 100% */
+    height: 100vh; /* Define a altura como 100% da altura da janela de visualização */
+    
+    background-image: url('imagens/bg-desktop 1.png'); /* URL da imagem de fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-size: cover; /* Faz com que a imagem de fundo cubra toda a tela */
+    z-index: -1; /* Define o z-index para que a imagem fique atrás dos outros elementos */
+}
+
+
+.logo{
+
+    width: 296px;
+    height: 152px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 18px; /* Adicione o top para definir a posição vertical */
+}
+.quadroUm{
+   
+    position: absolute; /* Define a posição absoluta para o texto */
+    margin-left: 89px;
+    margin-top: 5px;
+
+    width: 431.5px;
+    height: 24px;
+    top: 4px;
+    left: 76.75px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+
+    color: #FFFFFF;
+    font-family: Oxanium;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.3em;
+    text-align: center;
+
+    width: Fixed (585px)px;
+    height: Fixed (32px)px;
+    top: 202px;
+    left: 120px;
+    padding: 0px 81px 0px 81px;
+    gap: 10px;
+    border: 0px 0px 2px 0px;
+    opacity: 0px;
+
+    border-bottom: 2px solid #47F4FF
+
+ }
+
+ .fotos {
+    width: 585px; /* Largura fixa do contêiner */
+    height: 405px; /* Altura fixa do contêiner */
+    position: absolute; /* Posicionamento absoluto */
+    top: 235.76px; /* Distância do topo */
+    margin-left: 205px; /* Margem à esquerda */
+    display: flex; /* Define o contêiner como um flex container */
+    flex-wrap: wrap; /* Permite que os elementos sejam movidos para a próxima linha */
+    margin-top: 30px;
+   
+
+}
+
+.fotos .img{
+    width: 123px;
+    height: 190px;
+    cursor: pointer; /* Altera o cursor para indicar que a imagem é clicável */
+    transition: transform 300ms ease-out, box-shadow 300ms ease-out; /* Define a transição para a animação */
+   
+    
+}
+.fotos img:hover {
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho da imagem ao passar o mouse sobre ela */  
+    background: #D9D9D9; /* Altera o plano de fundo da imagem */
+    box-shadow: 0px 0px 24px 5px #0271F7; /* Adiciona uma sombra à volta da imagem */
+}
+
+.fotos .com-margem {
+    margin-right: 31px;
+    margin-bottom: 30px; /* Adiciona uma margem inferior */
+   
+    
+}
+.fotos .sem-margem {
+  
+    margin-bottom: 30px; /* Adiciona uma margem inferior */
+   
+}
